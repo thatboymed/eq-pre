@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_irc_CL",
+  "columns": [
+ { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
+    { "name": "source_ip", "type": "string", "description": "Source IP address" },
+    { "name": "destination_ip", "type": "string", "description": "Destination IP address" },
+    { "name": "channel", "type": "string", "description": "IRC channel name" },
+    { "name": "message", "type": "string", "description": "Message content (if captured)" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_irc_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
