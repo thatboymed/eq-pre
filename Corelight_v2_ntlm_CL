@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ntlm_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the authentication event" },
-    { "name": "client_ip", "type": "string", "description": "IP address of the client" },
-    { "name": "server_ip", "type": "string", "description": "IP address of the server" },
-    { "name": "username", "type": "string", "description": "Username used for authentication" },
-    { "name": "auth_status", "type": "string", "description": "Status of the authentication (e.g., success, failed)" }
+ { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "NTLMVersion", "type": "int" },
+        { "name": "Username", "type": "string" },
+        { "name": "Domain", "type": "string" },
+        { "name": "Workstation", "type": "string" },
+        { "name": "MessageType", "type": "string" }
 },
     "plan": "Analytics"
 }
