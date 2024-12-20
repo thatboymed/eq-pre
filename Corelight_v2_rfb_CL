@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_rfb_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the RFB event" },
-    { "name": "client_ip", "type": "string", "description": "IP address of the RFB client" },
-    { "name": "server_ip", "type": "string", "description": "IP address of the RFB server" },
-    { "name": "session_id", "type": "string", "description": "Unique identifier for the RFB session" },
-    { "name": "action", "type": "string", "description": "Action performed in the session (e.g., connect, disconnect)" }
+         { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "ProtocolVersion", "type": "string" },
+        { "name": "AuthenticationType", "type": "string" }
   ]
 },
     "plan": "Analytics"
