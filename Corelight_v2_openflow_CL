@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_openflow_CL",
+  "columns": [
+  { "name": "timestamp", "type": "datetime", "description": "Time of the OpenFlow event" },
+    { "name": "controller_ip", "type": "string", "description": "IP address of the OpenFlow controller" },
+    { "name": "switch_id", "type": "string", "description": "Unique identifier of the OpenFlow switch" },
+    { "name": "flow_action", "type": "string", "description": "Action taken on the flow (e.g., allow, drop)" },
+    { "name": "match_fields", "type": "string", "description": "Fields used to match the flow (e.g., source IP, destination port)" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_openflow_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
