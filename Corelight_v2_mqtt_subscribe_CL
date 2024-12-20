@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_mqtt_subscribe_CL",
+  "columns": [
+ { "name": "timestamp", "type": "datetime", "description": "Time of the subscription event" },
+    { "name": "client_id", "type": "string", "description": "Unique identifier of the MQTT client" },
+    { "name": "topic", "type": "string", "description": "MQTT topic to which the client subscribed" },
+    { "name": "qos_level", "type": "integer", "description": "Quality of Service (QoS) level for the subscription" },
+    { "name": "subscription_status", "type": "string", "description": "Status of the subscription (e.g., success, failed)" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_mqtt_subscribe_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
