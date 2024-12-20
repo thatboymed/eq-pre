@@ -10,7 +10,6 @@ $tableParams = @'
     { "name": "cotp_type", "type": "string", "description": "Type of the COTP message" },
     { "name": "session_id", "type": "string", "description": "Session ID for the connection" }
   ]
-  ]
 },
     "plan": "Analytics"
 }
