@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_radius_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the RADIUS event" },
-    { "name": "client_ip", "type": "string", "description": "IP address of the RADIUS client" },
-    { "name": "server_ip", "type": "string", "description": "IP address of the RADIUS server" },
-    { "name": "username", "type": "string", "description": "Username used for authentication" },
-    { "name": "auth_status", "type": "string", "description": "Authentication status (e.g., success, failure)" }
+ { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "Username", "type": "string" },
+        { "name": "AuthenticationType", "type": "string" },
+        { "name": "ResponseCode", "type": "string" }
   ]
 },
     "plan": "Analytics"
