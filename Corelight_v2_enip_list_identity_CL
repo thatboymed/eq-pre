@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_enip_list_identity_CL",
+  "columns": [
+{ "name": "timestamp", "type": "datetime", "description": "Time of the ListIdentity request" },
+    { "name": "source_ip", "type": "string", "description": "IP address of the ENIP client" },
+    { "name": "destination_ip", "type": "string", "description": "IP address of the ENIP server" },
+    { "name": "identity_response", "type": "string", "description": "Details of the identity response" },
+    { "name": "response_time", "type": "float", "description": "Time taken to respond in seconds" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_enip_list_identity_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
