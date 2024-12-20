@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_dns_red_CL",
+  "columns": [
+ { "name": "timestamp", "type": "datetime", "description": "Time of the DNS query" },
+    { "name": "source_ip", "type": "string", "description": "IP address of the client making the DNS query" },
+    { "name": "query", "type": "string", "description": "Domain name queried" },
+    { "name": "response_code", "type": "string", "description": "DNS response code (e.g., NOERROR, NXDOMAIN)" },
+    { "name": "threat_level", "type": "string", "description": "Threat level associated with the query (e.g., high, medium)" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_dns_red_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
