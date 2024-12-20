@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_s7comm_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the S7Comm event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the S7Comm client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the S7Comm server" },
-    { "name": "function_code", "type": "integer", "description": "S7Comm function code used" },
-    { "name": "response_status", "type": "string", "description": "Response status (e.g., success, failure)" }
+ { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "FunctionCode", "type": "string" },
+        { "name": "ResponseCode", "type": "string" }
   ]
 },
     "plan": "Analytics"
