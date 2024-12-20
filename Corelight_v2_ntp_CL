@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ntp_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the NTP event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the NTP client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the NTP server" },
-    { "name": "version", "type": "integer", "description": "NTP protocol version used" },
-    { "name": "leap_indicator", "type": "string", "description": "Leap second indicator (e.g., no leap, add leap second)" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "Mode", "type": "string" },
+        { "name": "Stratum", "type": "int" },
+        { "name": "Precision", "type": "real" },
+        { "name": "RootDelay", "type": "real" },
+        { "name": "RootDispersion", "type": "real" }
   ]
 },
     "plan": "Analytics"
