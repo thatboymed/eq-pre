@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_profinet_dce_rpc_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the server" },
-    { "name": "method", "type": "string", "description": "DCE/RPC method invoked" },
-    { "name": "response_status", "type": "string", "description": "Status of the response (e.g., success, failure)" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "OperationType", "type": "string" },
+        { "name": "ProtocolVersion", "type": "string" },
+        { "name": "ServiceUUID", "type": "string" },
+        { "name": "ResponseCode", "type": "string" },
+        { "name": "Duration", "type": "real" }
   ]
 },
     "plan": "Analytics"
