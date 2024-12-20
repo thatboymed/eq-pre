@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_mysql_CL.json",
+  "columns": [
+    { "name": "timestamp", "type": "datetime", "description": "Time of the query" },
+    { "name": "client_ip", "type": "string", "description": "IP address of the MySQL client" },
+    { "name": "server_ip", "type": "string", "description": "IP address of the MySQL server" },
+    { "name": "query_type", "type": "string", "description": "Type of the query (e.g., SELECT, INSERT)" },
+    { "name": "response_time", "type": "float", "description": "Time taken to respond to the query in seconds" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_mysql_CL.json?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
