@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_known_remotes_CL",
+  "columns": [
+ { "name": "timestamp", "type": "datetime", "description": "Time of observation" },
+    { "name": "remote_ip", "type": "string", "description": "IP address of the remote endpoint" },
+    { "name": "remote_port", "type": "integer", "description": "Port number used by the remote endpoint" },
+    { "name": "protocol", "type": "string", "description": "Protocol used for the connection" },
+    { "name": "last_activity", "type": "datetime", "description": "Last observed activity for this remote" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_known_remotes_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
