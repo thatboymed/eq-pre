@@ -4,11 +4,10 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_pe_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the PE event" },
-    { "name": "file_hash", "type": "string", "description": "Hash of the PE file" },
-    { "name": "file_name", "type": "string", "description": "Name of the PE file" },
-    { "name": "file_size", "type": "integer", "description": "Size of the file in bytes" },
-    { "name": "signature_status", "type": "string", "description": "Status of the file signature (e.g., valid, invalid)" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "FilterID", "type": "string" },
+        { "name": "PacketCount", "type": "int" },
+        { "name": "ByteCount", "type": "int" }
   ]
 },
     "plan": "Analytics"
