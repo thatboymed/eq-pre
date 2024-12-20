@@ -1,0 +1,19 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_local_subnets_CL",
+  "columns": [
+ { "name": "subnet_id", "type": "string", "description": "Unique identifier for the subnet" },
+    { "name": "subnet_address", "type": "string", "description": "Subnet address (e.g., 192.168.1.0/24)" },
+    { "name": "netmask", "type": "string", "description": "Netmask for the subnet" },
+    { "name": "description", "type": "string", "description": "Description of the subnet's purpose" },
+    { "name": "last_seen", "type": "datetime", "description": "Last observed activity on the subnet" }
+  ]
+}
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_local_subnets_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
