@@ -4,11 +4,10 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_packet_filter_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the packet filtering event" },
-    { "name": "filter_id", "type": "string", "description": "Unique identifier for the filter" },
-    { "name": "action", "type": "string", "description": "Action taken by the filter (e.g., allow, block)" },
-    { "name": "source_ip", "type": "string", "description": "Source IP address of the packet" },
-    { "name": "destination_ip", "type": "string", "description": "Destination IP address of the packet" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "FilterID", "type": "string" },
+        { "name": "PacketCount", "type": "int" },
+        { "name": "ByteCount", "type": "int" }
   ]
 },
     "plan": "Analytics"
