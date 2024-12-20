@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_local_subnets_dj_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the change" },
-    { "name": "subnet", "type": "string", "description": "Subnet address (e.g., 192.168.1.0/24)" },
-    { "name": "change_type", "type": "string", "description": "Type of change (e.g., addition, removal)" },
-    { "name": "affected_devices", "type": "integer", "description": "Number of devices affected by the change" },
-    { "name": "initiator", "type": "string", "description": "Entity or process initiating the change" }
+   { "name": "subnet_id", "type": "string", "description": "Unique identifier for the subnet" },
+    { "name": "subnet_address", "type": "string", "description": "Subnet address (e.g., 192.168.1.0/24)" },
+    { "name": "description", "type": "string", "description": "Description of the subnet's purpose" },
+    { "name": "data_volume", "type": "integer", "description": "Data volume in bytes handled by the subnet" },
+    { "name": "last_updated", "type": "datetime", "description": "Last update timestamp for the subnet" }
   ]
 },
     "plan": "Analytics"
