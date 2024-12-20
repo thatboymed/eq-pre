@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_openflow_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the OpenFlow event" },
-    { "name": "controller_ip", "type": "string", "description": "IP address of the OpenFlow controller" },
-    { "name": "switch_id", "type": "string", "description": "Unique identifier of the OpenFlow switch" },
-    { "name": "flow_action", "type": "string", "description": "Action taken on the flow (e.g., allow, drop)" },
-    { "name": "match_fields", "type": "string", "description": "Fields used to match the flow (e.g., source IP, destination port)" }
+ { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SwitchID", "type": "string" },
+        { "name": "ControllerIP", "type": "string" },
+        { "name": "PacketCount", "type": "int" },
+        { "name": "ByteCount", "type": "int" }
   ]
 },
     "plan": "Analytics"
