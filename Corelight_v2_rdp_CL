@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_rdp_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the RDP session" },
-    { "name": "client_ip", "type": "string", "description": "IP address of the RDP client" },
-    { "name": "server_ip", "type": "string", "description": "IP address of the RDP server" },
-    { "name": "username", "type": "string", "description": "Username used for the session" },
-    { "name": "session_duration", "type": "float", "description": "Duration of the session in seconds" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "Username", "type": "string" },
+        { "name": "SessionType", "type": "string" },
+        { "name": "Duration", "type": "real" }
   ]
 },
     "plan": "Analytics"
