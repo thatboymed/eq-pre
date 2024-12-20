@@ -4,10 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_profinet_debug_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the debug event" },
-    { "name": "debug_level", "type": "string", "description": "Debug level (e.g., info, error)" },
-    { "name": "source", "type": "string", "description": "Source of the debug event" },
-    { "name": "message", "type": "string", "description": "Details of the debug message" }
+       { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "DebugMessage", "type": "string" },
+        { "name": "ProtocolVersion", "type": "string" },
+        { "name": "OperationType", "type": "string" },
+        { "name": "Severity", "type": "int" }
   ]
 },
     "plan": "Analytics"
