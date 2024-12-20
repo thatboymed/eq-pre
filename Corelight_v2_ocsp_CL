@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ocsp_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the OCSP request" },
-    { "name": "client_ip", "type": "string", "description": "IP address of the OCSP client" },
-    { "name": "server_ip", "type": "string", "description": "IP address of the OCSP server" },
-    { "name": "certificate_status", "type": "string", "description": "Status of the certificate (e.g., good, revoked)" },
-    { "name": "response_time", "type": "float", "description": "Time taken to respond to the OCSP request in seconds" }
+ { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "ResponderURL", "type": "string" },
+        { "name": "CertificateSerial", "type": "string" },
+        { "name": "ResponseStatus", "type": "string" }
   ]
 },
     "plan": "Analytics"
