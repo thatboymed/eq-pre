@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_bacnet_CL",
+  "columns": [
+{ "name": "cert_id", "type": "string", "description": "Unique identifier for the certificate" },
+    { "name": "issuer", "type": "string", "description": "Issuer of the certificate" },
+    { "name": "subject", "type": "string", "description": "Subject of the certificate" },
+    { "name": "valid_from", "type": "datetime", "description": "Certificate validity start date" },
+    { "name": "valid_to", "type": "datetime", "description": "Certificate validity end date" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_known_certs_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
