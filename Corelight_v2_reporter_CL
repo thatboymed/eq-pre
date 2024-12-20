@@ -4,11 +4,15 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_reporter_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the alert" },
-    { "name": "reporter_id", "type": "string", "description": "Unique identifier for the reporter" },
-    { "name": "alert_type", "type": "string", "description": "Type of the alert" },
-    { "name": "severity", "type": "string", "description": "Severity level of the alert" },
-    { "name": "details", "type": "string", "description": "Additional details about the alert" }
+   { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "Message", "type": "string" },
+        { "name": "Severity", "type": "integer" },
+        { "name": "ReporterID", "type": "string" },
+        { "name": "Category", "type": "string" },
+        { "name": "SourcePort", "type": "integer" },
+        { "name": "AdditionalDetails", "type": "string" },
+        { "name": "EventID", "type": "string" }
   ]
 },
     "plan": "Analytics"
