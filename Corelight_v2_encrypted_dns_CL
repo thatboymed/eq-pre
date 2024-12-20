@@ -1,0 +1,17 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_encrypted_dns_CL",
+  "columns": [
+ { "name": "timestamp", "type": "datetime", "description": "Time of the encrypted DNS event" },
+    { "name": "source_ip", "type": "string", "description": "IP address of the client" },
+    { "name": "destination_ip", "type": "string", "description": "IP address of the DNS server" },
+    { "name": "encryption_protocol", "type": "string", "description": "Encryption protocol used (e.g., DoH, DoT)" },
+    { "name": "response_time", "type": "float", "description": "Response time in seconds" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_encrypted_dns_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
