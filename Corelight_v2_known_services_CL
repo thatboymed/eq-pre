@@ -4,6 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_services_CL",
   "columns": [
+    { "name": "TimeGenerated", "type": "datetime" }
     { "name": "service_name", "type": "string", "description": "Name of the known service" },
     { "name": "service_type", "type": "string", "description": "Type of the service (e.g., HTTP, FTP)" },
     { "name": "host_ip", "type": "string", "description": "IP address hosting the service" },
