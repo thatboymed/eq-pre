@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_etc_viz_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the visualization data capture" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "data_type", "type": "string", "description": "Type of data being visualized (e.g., traffic, alerts)" },
     { "name": "source", "type": "string", "description": "Source of the data" },
     { "name": "details", "type": "string", "description": "Additional details about the visualization data" }
