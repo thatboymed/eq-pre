@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_enip_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the ENIP event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "Source IP address of the ENIP client" },
     { "name": "destination_ip", "type": "string", "description": "Destination IP address of the ENIP server" },
     { "name": "command", "type": "string", "description": "ENIP command executed" },
