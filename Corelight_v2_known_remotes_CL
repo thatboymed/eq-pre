@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_remotes_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of observation" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "remote_ip", "type": "string", "description": "IP address of the remote endpoint" },
     { "name": "remote_port", "type": "integer", "description": "Port number used by the remote endpoint" },
     { "name": "protocol", "type": "string", "description": "Protocol used for the connection" },
