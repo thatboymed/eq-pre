@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_encrypted_dns_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the encrypted DNS event" },
+ { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "IP address of the client" },
     { "name": "destination_ip", "type": "string", "description": "IP address of the DNS server" },
     { "name": "encryption_protocol", "type": "string", "description": "Encryption protocol used (e.g., DoH, DoT)" },
