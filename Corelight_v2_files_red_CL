@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_files_red_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the file event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "file_hash", "type": "string", "description": "Hash of the suspicious file" },
     { "name": "file_name", "type": "string", "description": "Name of the file" },
     { "name": "threat_level", "type": "string", "description": "Assigned threat level (e.g., high, medium)" },
