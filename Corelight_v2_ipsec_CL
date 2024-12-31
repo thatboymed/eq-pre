@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ipsec_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the IPsec event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "IP address of the IPsec initiator" },
     { "name": "destination_ip", "type": "string", "description": "IP address of the IPsec responder" },
     { "name": "encryption_method", "type": "string", "description": "Encryption method used" },
