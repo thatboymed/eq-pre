@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ftp_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the FTP event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "client_ip", "type": "string", "description": "IP address of the FTP client" },
     { "name": "server_ip", "type": "string", "description": "IP address of the FTP server" },
     { "name": "command", "type": "string", "description": "FTP command issued (e.g., GET, PUT)" },
