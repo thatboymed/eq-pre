@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_intel_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the intelligence event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "indicator", "type": "string", "description": "Indicator of compromise (e.g., IP, domain)" },
     { "name": "indicator_type", "type": "string", "description": "Type of indicator (e.g., malicious IP, domain)" },
     { "name": "threat_level", "type": "string", "description": "Assigned threat level" },
