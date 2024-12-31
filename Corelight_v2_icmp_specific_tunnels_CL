@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_icmp_specific_tunnels_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the ICMP tunneling event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "IP address of the ICMP sender" },
     { "name": "destination_ip", "type": "string", "description": "IP address of the ICMP receiver" },
     { "name": "tunnel_type", "type": "string", "description": "Type of ICMP tunnel detected" },
