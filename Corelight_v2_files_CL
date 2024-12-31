@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_files_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the file event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "file_hash", "type": "string", "description": "Hash of the file" },
     { "name": "file_name", "type": "string", "description": "Name of the file" },
     { "name": "file_size", "type": "integer", "description": "Size of the file in bytes" },
