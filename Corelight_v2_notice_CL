@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_notice_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the notice event" },
+    { "name": "TimeGenerated", "type": "datetime" },
     { "name": "notice_type", "type": "string", "description": "Type of the notice (e.g., policy violation, threat detected)" },
     { "name": "source_ip", "type": "string", "description": "Source IP address related to the notice" },
     { "name": "destination_ip", "type": "string", "description": "Destination IP address related to the notice" },
