@@ -4,7 +4,6 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_names_CL",
   "columns": [
-   { "name": "timestamp", "type": "datetime", "description": "Time of observation" },
     { "name": "hostname", "type": "string", "description": "Known hostname" },
     { "name": "ip_address", "type": "string", "description": "IP address associated with the hostname" },
     { "name": "domain", "type": "string", "description": "Domain to which the hostname belongs" },
