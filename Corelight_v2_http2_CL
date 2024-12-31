@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_http2_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the HTTP/2 event" },
+ { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "IP address of the HTTP/2 client" },
     { "name": "destination_ip", "type": "string", "description": "IP address of the HTTP/2 server" },
     { "name": "method", "type": "string", "description": "HTTP/2 method used (e.g., GET, POST)" },
