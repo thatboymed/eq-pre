@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_certs_CL",
   "columns": [
-{ "name": "cert_id", "type": "string", "description": "Unique identifier for the certificate" },
+    { "name": "cert_id", "type": "string", "description": "Unique identifier for the certificate" },
     { "name": "issuer", "type": "string", "description": "Issuer of the certificate" },
     { "name": "subject", "type": "string", "description": "Subject of the certificate" },
     { "name": "valid_from", "type": "datetime", "description": "Certificate validity start date" },
     { "name": "valid_to", "type": "datetime", "description": "Certificate validity end date" }
+    { "name": "TimeGenerated", "type": "datetime" }
   ]
 },
     "plan": "Analytics"
