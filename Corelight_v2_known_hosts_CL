@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_hosts_CL",
   "columns": [
-{ "name": "host_id", "type": "string", "description": "Unique identifier for the host" },
+    { "name": "host_id", "type": "string", "description": "Unique identifier for the host" },
     { "name": "hostname", "type": "string", "description": "Name of the host" },
     { "name": "ip_address", "type": "string", "description": "IP address of the host" },
     { "name": "operating_system", "type": "string", "description": "Operating system installed on the host" },
     { "name": "last_seen", "type": "datetime", "description": "Last time the host was observed on the network" }
+    { "name": "TimeGenerated", "type": "datetime" }
   ]
 },
     "plan": "Analytics"
