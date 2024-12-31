@@ -9,6 +9,7 @@ $tableParams = @'
     { "name": "ip_address", "type": "string", "description": "IP address associated with the hostname" },
     { "name": "domain", "type": "string", "description": "Domain to which the hostname belongs" },
     { "name": "last_seen", "type": "datetime", "description": "Last observed time for this hostname" }
+    { "name": "TimeGenerated", "type": "datetime" }
   ]
 },
     "plan": "Analytics"
