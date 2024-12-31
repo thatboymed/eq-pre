@@ -9,6 +9,7 @@ $tableParams = @'
     { "name": "creation_date", "type": "datetime", "description": "Domain creation date" },
     { "name": "expiration_date", "type": "datetime", "description": "Domain expiration date" },
     { "name": "category", "type": "string", "description": "Category of the domain (e.g., business, social media)" }
+{ "name": "TimeGenerated", "type": "datetime" }
   ]
 },
     "plan": "Analytics"
