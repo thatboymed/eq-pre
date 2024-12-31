@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_iso_cotp_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
+  { "name": "TimeGenerated", "type": "datetime" },
     { "name": "source_ip", "type": "string", "description": "Source IP address" },
     { "name": "destination_ip", "type": "string", "description": "Destination IP address" },
     { "name": "cotp_type", "type": "string", "description": "Type of the COTP message" },
